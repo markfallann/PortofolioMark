@@ -282,6 +282,24 @@ linear-gradient(135deg,#0a0607 0%,#16090b 48%,#090606 100%);
 .graffiti-box:after{content:"GRAFFITI // FALLAN";position:absolute;right:-28px;bottom:8px;font-family:"Permanent Marker",cursive;font-size:20px;color:#a71922;transform:rotate(-12deg);opacity:.72}
 @media(max-width:700px){.profile-grid{grid-template-columns:1fr 1fr}}
 </style>
+
+<style>
+.profile-section{margin-top:34px;position:relative;overflow:hidden;background:#0b0708;border:3px solid #8f1018;padding:28px;box-shadow:9px 9px 0 #030202}
+.profile-section:before{content:"PROFILE // IDENTITY";position:absolute;top:16px;right:20px;font-family:"Permanent Marker",cursive;color:#8f1018;font-size:15px;transform:rotate(5deg)}
+.profile-head{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.profile-stamp{background:#8f1018;color:#f2e9df;padding:7px 12px;font-size:10px;font-weight:800;letter-spacing:2px;transform:rotate(-3deg);box-shadow:5px 5px 0 #030202}
+.profile-head h3{margin:0;font-family:"Permanent Marker",cursive;color:#f2e9df;font-size:clamp(25px,4vw,42px);transform:rotate(1deg)}
+.profile-grid-final{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.profile-item{min-height:82px;padding:15px;background:#160a0c;border:1px solid #4d171d}
+.profile-item:nth-child(2n){transform:rotate(.4deg)}
+.profile-item:nth-child(3n){transform:rotate(-.4deg)}
+.profile-item span{display:block;margin-bottom:7px;color:#9f8985;font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.profile-item strong{display:block;color:#f2e9df;font-family:"Space Grotesk",sans-serif;font-size:15px;line-height:1.35}
+.profile-tag{display:inline-block;margin-top:20px;padding:5px 10px;color:#a71922;border:2px solid #a71922;font-family:"Permanent Marker",cursive;font-size:13px;transform:rotate(-2deg)}
+@media(max-width:700px){.profile-grid-final{grid-template-columns:1fr 1fr}.profile-section{padding:20px}}
+@media(max-width:440px){.profile-grid-final{grid-template-columns:1fr}}
+</style>
+
 </head>
 
 <body>
@@ -367,6 +385,23 @@ linear-gradient(135deg,#0a0607 0%,#16090b 48%,#090606 100%);
     </div>
   </div>
 </section>
+
+
+<div class="profile-section reveal">
+  <div class="profile-head">
+    <div class="profile-stamp">STUDENT DATA</div>
+    <h3>MY PROFILE</h3>
+  </div>
+  <div class="profile-grid-final">
+    <div class="profile-item"><span>Nama Lengkap</span><strong>Fallan Mark Warokka</strong></div>
+    <div class="profile-item"><span>NIS</span><strong>13567</strong></div>
+    <div class="profile-item"><span>NISN</span><strong>0133199642</strong></div>
+    <div class="profile-item"><span>Agama</span><strong>Kristen Protestan</strong></div>
+    <div class="profile-item"><span>Angkatan</span><strong>69-C</strong></div>
+    <div class="profile-item"><span>Sekolah</span><strong>SMP Katolik Stella Maris Tomohon</strong></div>
+  </div>
+  <div class="profile-tag">NO COPY // OWN STYLE</div>
+</div>
 
 <section class="section" id="journey">
   <div class="paint-stroke" style="left:-90px;top:80px;background:#8f3b3b;transform:rotate(8deg)"></div>
